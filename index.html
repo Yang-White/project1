@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#111019">
+  <meta name="description" content="像素情報站：最新遊戲新聞、深度評測與玩家觀點。">
+  <title>像素情報站 — 玩家的下一站</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Noto+Sans+TC:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="#" aria-label="像素情報站首頁">
+        <span class="brand-mark" aria-hidden="true">P<span>✦</span></span>
+        <span class="brand-name">PIXEL<span>PRESS</span></span>
+      </a>
+      <button class="menu-toggle" type="button" aria-label="開啟選單" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="main-nav" aria-label="主要導覽">
+        <a class="nav-link active" href="#latest">首頁</a>
+        <a class="nav-link" href="#latest" data-category-link="新聞">遊戲新聞</a>
+        <a class="nav-link" href="#latest" data-category-link="評測">深度評測</a>
+        <a class="nav-link" href="#community">玩家專欄</a>
+      </nav>
+      <button class="search-toggle" type="button" aria-label="搜尋文章">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"></circle><path d="m16 16 5 5"></path></svg>
+      </button>
+    </div>
+    <form class="search-bar" role="search">
+      <label class="sr-only" for="site-search">搜尋文章</label>
+      <input id="site-search" type="search" placeholder="搜尋遊戲、新聞或評測…">
+      <button type="submit">搜尋</button>
+    </form>
+  </header>
+
+  <main>
+    <section class="hero page-shell" aria-label="焦點文章">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="live-dot"></span> 玩家新視界・每週更新</p>
+        <h1>下一場冒險，<br>從這裡<span>開始。</span></h1>
+        <p class="hero-description">最新遊戲情報、真實玩家評測，還有那些讓你想再玩一回合的精彩故事。</p>
+        <a class="button button-primary" href="#latest">探索最新文章 <span aria-hidden="true">↗</span></a>
+        <div class="hero-stats">
+          <div><strong>120<span>+</span></strong><small>篇深度文章</small></div>
+          <div><strong>8.6<span>k</span></strong><small>每月玩家閱讀</small></div>
+          <div class="avatar-stack" aria-label="玩家社群">
+            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=80&q=80" alt="">
+            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=80&q=80" alt="">
+            <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=80&q=80" alt="">
+            <span>+2k</span>
+          </div>
+        </div>
+      </div>
+      <a class="hero-feature" href="#article-feature">
+        <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=1400&q=85" alt="電競賽事現場，觀眾聚集在舞台前">
+        <span class="feature-overlay"></span>
+        <span class="feature-topline"><span class="tag tag-pink">本週焦點</span><span class="feature-read">閱讀時間 8 分鐘</span></span>
+        <span class="feature-bottom">
+          <span class="feature-category">專題報導&nbsp; / &nbsp;電競</span>
+          <strong>電競新世代：<br>遊戲如何改變我們的生活？</strong>
+          <span class="feature-author"><span class="author-avatar">林</span> 林子翔 <span class="author-divider">·</span> 2025.10.24 <span class="feature-arrow">↗</span></span>
+        </span>
+      </a>
+    </section>
+
+    <section class="latest-section page-shell" id="latest">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">KEEP YOUR GAME ON</p>
+          <h2>最新<span>文章</span></h2>
+        </div>
+        <div class="category-filters" role="group" aria-label="文章分類">
+          <button class="filter-chip active" type="button" data-category="全部">全部</button>
+          <button class="filter-chip" type="button" data-category="新聞">遊戲新聞</button>
+          <button class="filter-chip" type="button" data-category="評測">深度評測</button>
+          <button class="filter-chip" type="button" data-category="攻略">玩家攻略</button>
+        </div>
+      </div>
+
+      <div class="content-layout">
+        <div class="article-grid" id="article-grid">
+          <article class="article-card" data-category="評測" data-search="星際拓荒者 評測 太空 冒險">
+            <a class="card-image" href="#article-feature">
+              <img src="https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?auto=format&fit=crop&w=900&q=80" alt="太空中的地球與繁星">
+              <span class="tag tag-purple">深度評測</span>
+              <span class="card-image-icon" aria-hidden="true">↗</span>
+            </a>
+            <div class="card-body">
+              <div class="card-meta"><span>PC・PS5</span><span>2025.10.22</span></div>
+              <h3><a href="#article-feature">《星際拓荒者》評測：在宇宙盡頭，找到回家的路</a></h3>
+              <p>廣闊宇宙裡的每一次選擇，都讓這趟旅程比想像中更貼近人心。</p>
+              <a class="read-more" href="#article-feature">閱讀全文 <span>→</span></a>
+            </div>
+          </article>
+          <article class="article-card" data-category="新聞" data-search="獨立遊戲 新聞 開發者 新作">
+            <a class="card-image" href="#article-feature">
+              <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=900&q=80" alt="遊戲手把與桌上遊戲設備">
+              <span class="tag tag-blue">遊戲新聞</span>
+              <span class="card-image-icon" aria-hidden="true">↗</span>
+            </a>
+            <div class="card-body">
+              <div class="card-meta"><span>產業觀察</span><span>2025.10.20</span></div>
+              <h3><a href="#article-feature">小團隊的大夢想：今年最值得期待的獨立遊戲</a></h3>
+              <p>不靠華麗特效，這些創作者用想像力打造下一個難忘世界。</p>
+              <a class="read-more" href="#article-feature">閱讀全文 <span>→</span></a>
+            </div>
+          </article>
+          <article class="article-card" data-category="攻略" data-search="新手攻略 戰術 團隊合作 線上遊戲">
+            <a class="card-image" href="#article-feature">
+              <img src="https://images.unsplash.com/photo-1547394765-185e1e68f34e?auto=format&fit=crop&w=900&q=80" alt="玩家專注操作電腦遊戲">
+              <span class="tag tag-green">玩家攻略</span>
+              <span class="card-image-icon" aria-hidden="true">↗</span>
+            </a>
+            <div class="card-body">
+              <div class="card-meta"><span>新手必讀</span><span>2025.10.18</span></div>
+              <h3><a href="#article-feature">從路人到神隊友：五個立刻升級的團隊技巧</a></h3>
+              <p>瞄準不是全部，溝通、站位與一點點默契才是致勝關鍵。</p>
+              <a class="read-more" href="#article-feature">閱讀全文 <span>→</span></a>
+            </div>
+          </article>
+        </div>
+
+        <aside class="sidebar">
+          <div class="sidebar-heading"><h3>本週熱門</h3><span class="trending-icon">↗</span></div>
+          <a class="trending-item" href="#article-feature"><span class="trending-number">01</span><span><small>玩家觀點・6 分鐘</small><strong>為什麼我們總是想「再玩一場」？</strong></span></a>
+          <a class="trending-item" href="#article-feature"><span class="trending-number">02</span><span><small>遊戲新聞・4 分鐘</small><strong>2025 秋季遊戲展五大亮點整理</strong></span></a>
+          <a class="trending-item" href="#article-feature"><span class="trending-number">03</span><span><small>深度評測・9 分鐘</small><strong>掌機新選擇：出門也能暢玩大作</strong></span></a>
+          <div class="newsletter" id="community">
+            <span class="newsletter-icon" aria-hidden="true">✦</span>
+            <p class="eyebrow">THE PLAYER'S BRIEFING</p>
+            <h3>好遊戲，<br>不該錯過。</h3>
+            <p class="newsletter-copy">訂閱每週玩家通信，第一時間收到最新情報。</p>
+            <form class="newsletter-form">
+              <label class="sr-only" for="email">電子郵件地址</label>
+              <input id="email" type="email" placeholder="你的電子郵件" required>
+              <button type="submit" aria-label="訂閱電子報">→</button>
+            </form>
+            <p class="form-message" aria-live="polite"></p>
+            <small>不打擾，只分享好遊戲。</small>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="quote-strip page-shell" id="article-feature">
+      <span class="quote-mark" aria-hidden="true">“</span>
+      <p>遊戲不只是逃離現實，<br><strong>也是重新認識世界的方式。</strong></p>
+      <span class="quote-credit">— 像素情報站，獻給每一位玩家</span>
+      <span class="quote-decoration" aria-hidden="true">✳</span>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner page-shell">
+      <a class="brand footer-brand" href="#"><span class="brand-mark" aria-hidden="true">P<span>✦</span></span><span class="brand-name">PIXEL<span>PRESS</span></span></a>
+      <p>為每一段遊戲旅程，留下值得分享的故事。</p>
+      <span class="copyright">© 2025 PIXEL PRESS. MADE FOR PLAYERS.</span>
+    </div>
+  </footer>
+</body>
+</html>
