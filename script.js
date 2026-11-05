@@ -85,6 +85,28 @@ searchInput.addEventListener("input", () => {
   if (!searchInput.value.trim()) filterArticles("全部");
 });
 
+const quotes = [
+  ["遊戲不只是逃離現實，", "也是重新認識世界的方式。"],
+  ["每一次重新出發，", "都能寫下不同的冒險。"],
+  ["最好的隊友，", "讓勝利和旅程都更值得。"],
+  ["地圖的邊界之外，", "還有等待你的新故事。"],
+  ["不用急著通關，", "享受沿途就是一種勝利。"],
+  ["手把交到朋友手上，", "平凡夜晚也能變成回憶。"],
+  ["勇氣不是從不失敗，", "而是每次倒下都再試一次。"],
+  ["屬於你的玩法，", "就是最好的攻略。"],
+  ["每個選擇都通往未知，", "這正是冒險迷人的地方。"],
+  ["一起玩的時光，", "總比高分紀錄更長久。"]
+];
+const quoteLead = document.querySelector("#quote-lead");
+const quoteHighlight = document.querySelector("#quote-highlight");
+let currentQuote = 0;
+
+window.setInterval(() => {
+  currentQuote = (currentQuote + 1) % quotes.length;
+  quoteLead.textContent = quotes[currentQuote][0];
+  quoteHighlight.textContent = quotes[currentQuote][1];
+}, 180000);
+
 document.querySelector(".newsletter-form").addEventListener("submit", (event) => {
   event.preventDefault();
   const emailInput = document.querySelector("#email");
