@@ -58,10 +58,10 @@ button { color: inherit; }
 .search-toggle { width: 38px; height: 38px; display: grid; place-items: center; border: 1px solid var(--line); border-radius: 50%; background: transparent; cursor: pointer; }
 .search-toggle svg { width: 17px; fill: none; stroke: #cbc8d5; stroke-width: 1.7; stroke-linecap: round; }
 .search-bar { display: none; width: min(1280px, calc(100% - 64px)); margin: -3px auto 0; padding: 0 0 15px; }
-.search-bar.open { display: flex; }
+.search-bar.open { display: flex; flex-direction: row; }
 .search-bar input, .newsletter-form input { min-width: 0; width: 100%; color: var(--text); border: 1px solid var(--line); background: var(--surface); outline: none; }
-.search-bar input { padding: 11px 14px; border-radius: 8px 0 0 8px; }
-.search-bar button { padding: 0 22px; border: 0; border-radius: 0 8px 8px 0; background: var(--purple); color: #17131f; font-weight: 700; cursor: pointer; }
+.search-bar input { flex: 1; padding: 11px 14px; border-radius: 8px 0 0 8px; }
+.search-bar button { flex-shrink: 0; padding: 0 22px; border: 0; border-radius: 0 8px 8px 0; background: var(--purple); color: #17131f; font-weight: 700; white-space: nowrap; cursor: pointer; }
 .menu-toggle { display: none; }
 
 .hero { min-height: 505px; display: grid; grid-template-columns: .9fr 1.1fr; align-items: center; gap: 70px; padding-block: 65px 76px; }
