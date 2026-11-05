@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#111019">
+  <meta name="description" content="瀏覽像素情報站的遊戲新聞、深度評測與玩家攻略。">
+  <title>文章列表｜像素情報站</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Noto+Sans+TC:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css">
+  <script src="articles.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner section-header">
+      <a class="brand" href="../index.html" aria-label="像素情報站首頁">
+        <span class="brand-mark" aria-hidden="true">P<span>✦</span></span>
+        <span class="brand-name">PIXEL<span>PRESS</span></span>
+      </a>
+      <nav class="section-nav" aria-label="主要導覽">
+        <a href="../index.html">首頁</a>
+        <a href="articles.html" aria-current="page">文章</a>
+        <a href="guides.html">遊戲攻略</a>
+        <a href="recommendations.html">遊戲推薦</a>
+        <a href="community.html">玩家社群</a>
+      </nav>
+    </div>
+  </header>
+  <main class="article-list-main">
+    <section class="latest-section page-shell" aria-labelledby="articles-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">KEEP YOUR GAME ON</p>
+          <h1 id="articles-title">最新<span>文章</span></h1>
+        </div>
+      </div>
+      <div class="category-filters" role="group" aria-label="文章分類">
+        <button class="filter-chip active" type="button" data-category="全部" aria-pressed="true">全部</button>
+        <button class="filter-chip" type="button" data-category="新聞" aria-pressed="false">遊戲新聞</button>
+        <button class="filter-chip" type="button" data-category="評測" aria-pressed="false">深度評測</button>
+        <button class="filter-chip" type="button" data-category="攻略" aria-pressed="false">玩家攻略</button>
+      </div>
+      <div class="article-grid article-list-grid" id="article-list" aria-live="polite"></div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="footer-inner page-shell">
+      <a class="brand footer-brand" href="../index.html">
+        <span class="brand-mark" aria-hidden="true">P<span>✦</span></span>
+        <span class="brand-name">PIXEL<span>PRESS</span></span>
+      </a>
+      <p>為每一段遊戲旅程，留下值得分享的故事。</p>
+      <span class="copyright">© 2025 PIXEL PRESS. MADE FOR PLAYERS.</span>
+    </div>
+  </footer>
+</body>
+</html>
