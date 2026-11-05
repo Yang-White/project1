@@ -141,6 +141,20 @@ h1, h2, h3, p { margin-top: 0; }
 .trending-item small { display: block; margin: 1px 0 6px; color: #8e8a9b; font-size: 9px; }
 .trending-item strong { display: block; font-size: 11px; line-height: 1.65; }
 .trending-item:hover strong { color: #c8b3ff; }
+.game-recommendations { margin-top: 21px; padding: 15px 12px 8px; border: 1px solid rgba(167,139,250,.14); border-radius: 10px; background: linear-gradient(145deg, rgba(167,139,250,.08), rgba(25,24,34,.86) 55%); }
+.game-recommendations .sidebar-heading { margin-bottom: 5px; }
+.game-recommendations .sidebar-heading h3 { font-size: 13px; }
+.recommendation-spark { color: #c9a9fc; font-size: 15px; }
+.game-recommendation { display: grid; grid-template-columns: 35px minmax(0, 1fr) auto; align-items: center; gap: 9px; padding: 11px 0; border-bottom: 1px solid var(--line); }
+.game-recommendation:last-child { border-bottom: 0; }
+.game-icon { width: 35px; height: 35px; display: grid; place-items: center; border-radius: 8px; font-size: 18px; font-weight: 700; }
+.game-icon-space { background: linear-gradient(140deg, #6b5b9c, #272139); color: #d7c8ff; }
+.game-icon-cozy { background: linear-gradient(140deg, #477b70, #233b38); color: #b7efd1; }
+.game-icon-racing { background: linear-gradient(140deg, #a54f83, #4a2d59); color: #ffc0e4; }
+.game-recommendation h4 { margin: 0 0 4px; font-size: 10px; }
+.game-recommendation p { margin: 0; color: var(--muted); font-size: 8px; white-space: nowrap; }
+.game-recommendation p span { color: #696575; }
+.game-score { padding: 4px 5px; border-radius: 4px; background: rgba(167,139,250,.12); color: #cbb8ff; font-size: 9px; font-weight: 700; }
 .newsletter { position: relative; overflow: hidden; margin-top: 23px; padding: 19px 16px 17px; border: 1px solid rgba(167,139,250,.15); border-radius: 10px; background: radial-gradient(ellipse at 100% 0%, rgba(127,94,193,.2), transparent 56%), #1b1925; }
 .newsletter-icon { position: absolute; top: 10px; right: 12px; color: #c9a9fc; font-size: 21px; }
 .newsletter .eyebrow { margin-bottom: 10px; font-size: 8px; letter-spacing: 1.1px; }
@@ -204,6 +218,7 @@ h1, h2, h3, p { margin-top: 0; }
   .sidebar { display: grid; grid-template-columns: 1fr 1fr; gap: 0 16px; padding: 23px 0 0; border-top: 1px solid var(--line); border-left: 0; }
   .sidebar-heading { grid-column: 1 / -1; }
   .trending-item:last-of-type { border-bottom: 0; }
+  .game-recommendations { grid-column: 1 / -1; }
   .newsletter { align-self: start; grid-column: 1 / -1; }
   .quote-strip { flex-wrap: wrap; gap: 10px; min-height: 150px; margin-bottom: 42px; padding: 24px; }
   .quote-mark { font-size: 48px; }
@@ -216,5 +231,5 @@ h1, h2, h3, p { margin-top: 0; }
   .card-image { height: 185px; }
   .article-card:nth-child(3) { display: block; }
   .sidebar { grid-template-columns: 1fr; }
-  .sidebar-heading, .newsletter { grid-column: auto; }
+  .sidebar-heading, .game-recommendations, .newsletter { grid-column: auto; }
 }
