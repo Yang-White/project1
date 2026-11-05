@@ -173,6 +173,9 @@ h1, h2, h3, p { margin-top: 0; }
 .quote-mark { align-self: flex-start; color: var(--purple); font-family: Georgia, serif; font-size: 64px; line-height: 1; }
 .quote-strip p { z-index: 1; margin: 0; font-size: 18px; line-height: 1.7; }
 .quote-strip p strong { color: #c5aaff; }
+.quote-next { z-index: 1; display: inline-flex; align-items: center; gap: 7px; align-self: center; padding: 8px 11px; border: 1px solid rgba(167,139,250,.24); border-radius: 20px; background: rgba(167,139,250,.1); color: #cbb8ff; font-size: 10px; white-space: nowrap; cursor: pointer; transition: background .2s, border-color .2s; }
+.quote-next:hover { border-color: rgba(167,139,250,.5); background: rgba(167,139,250,.2); }
+.quote-next span:last-child { font-size: 14px; }
 .quote-credit { z-index: 1; align-self: end; margin: 0 0 28px auto; color: var(--muted); font-size: 10px; white-space: nowrap; }
 .quote-decoration { position: absolute; right: 25px; color: rgba(167,139,250,.06); font-size: 120px; }
 .site-footer { border-top: 1px solid var(--line); }

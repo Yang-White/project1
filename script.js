@@ -99,13 +99,17 @@ const quotes = [
 ];
 const quoteLead = document.querySelector("#quote-lead");
 const quoteHighlight = document.querySelector("#quote-highlight");
+const quoteNext = document.querySelector(".quote-next");
 let currentQuote = 0;
 
-window.setInterval(() => {
+function showNextQuote() {
   currentQuote = (currentQuote + 1) % quotes.length;
   quoteLead.textContent = quotes[currentQuote][0];
   quoteHighlight.textContent = quotes[currentQuote][1];
-}, 180000);
+}
+
+quoteNext.addEventListener("click", showNextQuote);
+window.setInterval(showNextQuote, 180000);
 
 document.querySelector(".newsletter-form").addEventListener("submit", (event) => {
   event.preventDefault();
