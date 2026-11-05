@@ -48,8 +48,8 @@ button { color: inherit; }
 .site-header { position: relative; z-index: 5; border-bottom: 1px solid var(--line); background: rgba(17, 16, 25, .92); }
 .header-inner { width: min(1280px, calc(100% - 64px)); height: 76px; margin: auto; display: flex; align-items: center; justify-content: space-between; }
 .brand { display: inline-flex; align-items: center; gap: 10px; }
-.brand-mark { width: 34px; height: 34px; display: grid; place-items: center; position: relative; border-radius: 10px; background: linear-gradient(140deg, #a78bfa, #ef88b5); color: #17131f; font-size: 19px; font-weight: 900; }
-.brand-mark span { position: absolute; right: 3px; top: 2px; color: white; font-size: 9px; }
+.brand-mark { width: 34px; height: 34px; display: grid; place-items: center; border-radius: 10px; background: linear-gradient(140deg, #a78bfa, #ef88b5); }
+.brand-mark svg { width: 25px; height: 25px; }
 .brand-name { font-size: 13px; font-weight: 800; letter-spacing: 1.2px; }
 .brand-name span { color: var(--purple); }
 .main-nav { display: flex; gap: 38px; margin-left: 80px; }
@@ -232,7 +232,8 @@ h1, h2, h3, p { margin-top: 0; }
 .back-to-top:hover { box-shadow: 0 10px 32px rgba(153, 117, 238, .55); transform: translateY(-3px); }
 .back-to-top svg { width: 21px; height: 21px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
 .footer-inner { min-height: 83px; display: flex; align-items: center; justify-content: space-between; gap: 20px; }
-.footer-brand .brand-mark { width: 29px; height: 29px; font-size: 16px; }
+.footer-brand .brand-mark { width: 29px; height: 29px; }
+.footer-brand .brand-mark svg { width: 22px; height: 22px; }
 .footer-brand .brand-name { font-size: 11px; }
 .footer-inner > p { margin: 0; color: var(--muted); font-size: 10px; }
 .copyright { color: #777382; font-size: 8px; letter-spacing: .5px; }
