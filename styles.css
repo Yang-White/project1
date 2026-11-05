@@ -104,7 +104,8 @@ h1, h2, h3, p { margin-top: 0; }
 .section-heading .eyebrow { margin-bottom: 7px; font-size: 9px; }
 .section-heading h2 { margin: 0; font-size: 28px; letter-spacing: -.8px; }
 .section-heading h2 span { color: var(--purple); }
-.category-filters { display: flex; gap: 8px; padding-bottom: 2px; }
+.article-column { min-width: 0; }
+.category-filters { display: flex; justify-content: flex-end; gap: 8px; margin-bottom: 14px; }
 .filter-chip { padding: 8px 13px; border: 1px solid transparent; border-radius: 20px; background: transparent; color: var(--muted); font-size: 10px; cursor: pointer; transition: .2s; }
 .filter-chip:hover { color: var(--text); }
 .filter-chip.active { border-color: rgba(167,139,250,.22); background: rgba(167,139,250,.12); color: #cbb8ff; }
@@ -207,7 +208,7 @@ h1, h2, h3, p { margin-top: 0; }
   .hero-stats { margin-top: 28px; }
   .hero-feature { min-height: 330px; }
   .section-heading { align-items: flex-start; flex-direction: column; gap: 16px; }
-  .category-filters { width: 100%; overflow-x: auto; }
+  .category-filters { width: 100%; justify-content: flex-start; overflow-x: auto; }
   .filter-chip { flex: 0 0 auto; }
   .content-layout { grid-template-columns: 1fr; }
   .article-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
